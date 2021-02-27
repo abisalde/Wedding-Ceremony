@@ -4,7 +4,7 @@ class CoupleCard extends Component {
     state = {  }
     render() { 
         return ( 
-        <div className="col-md-5 team-grid">
+        <div className="col-weds-1 team-grid">
             <div className="ih-item circle effect10 bottom_to_top">
                 <div className="img"><img src={this.props.image} alt="" /></div>
             </div>

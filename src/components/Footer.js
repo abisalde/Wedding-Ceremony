@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
     render() { 
@@ -8,17 +7,17 @@ class Footer extends Component {
         <div className="footer-w3layouts">
             <div className="container">
                 <div className="agile-logo">
-                    <a href="index.html">WC</a>
+                    <Link to="/">WC</Link>
                 </div>
                 <div className="agile-copy">
-                    <p>© 2017 Wedding Ceremony. All rights reserved | Recreated with React by <a href="#">Abisalde</a></p>
+                    <p>© 2020 Wedding Ceremony. All rights reserved | Recreated with React by <a href="https://twitter.com/abisalde" target="_blank">Abisalde</a></p>
                 </div>
                 <div className="clearfix"></div>
             </div>
             <div className="thim-click-to-bottom">
-                <a href="#home" className="scroll">
+                <Link to="/" className="scroll">
                     <i className="fa fa-long-arrow-up" aria-hidden="true"></i>
-                </a>
+                </Link>
             </div>
         </div>
         );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -33,13 +34,13 @@ class Header extends Component {
                         <span className="icon-bar"></span>
 				    </button>
                         <div className="logo-agileinfo">
-                            <h1><a href="index.html">wc</a></h1>
+                            <h1><Link to="/">wc</Link></h1>
                         </div>
 
                         <div id="navbar" className="navbar-collapse navbar-right collapse hover-effect">
                             <ul className="nav navbar-nav">
-                                <li className="active"><a href="index.html" data-hover="Home">Home</a></li>
-                                <li><a href="#about" data-hover="About Us" className="scroll">About Us</a></li>
+                                <li className="active"><Link to="/" data-hover="Home">Home</Link></li>
+                                <li><Link to="/OurStory" data-hover="About Us" className="scroll">About Us</Link></li>
                                 <li><a href="#events" data-hover="Events" className="scroll">Events</a></li>
                                 <li><a href="#gallery" data-hover="Gallery" className="scroll">Gallery</a></li>
                                 <li><a href="#team" data-hover="Planners" className="scroll">Planners</a></li>

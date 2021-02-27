@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -15,16 +16,27 @@ class EntryPage extends Component {
     render() { 
         return (
             <div className="w3l-main">
-                <Header />
-                <Hero />
-                <OurStory />
-                <WhoWeAre />
-                <EventBlog />
-                <OurGallery />
-                <OurTeam />
-                <Counter />
-                <Contact />
-                <Footer />
+                <Router>
+                    <Header>
+                        <Route 
+                            path="/"
+                        />
+                    </Header>    
+                        <Hero />
+                    
+                    <OurStory>
+                        <Route
+                            path="/OurStory"
+                        />
+                    </OurStory>
+                        <WhoWeAre />
+                        <EventBlog />
+                        <OurGallery />
+                        <OurTeam />
+                        <Counter />
+                        <Contact />
+                        <Footer />
+                </Router>
             </div>  
         );
     }

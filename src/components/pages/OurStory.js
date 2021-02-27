@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from '../../Containers/OurStory/Gallery';
 import CoupleCard from '../../Containers/OurStory/CoupleCard';
+import CoupleCardStyle from '../../Containers/OurStory/CoupleCardStyle.css';
 
 // Images Declarations
 import img1 from '../assets/images/a1.png';
@@ -49,7 +50,7 @@ class OurStory extends Component {
                         )
                     })
                     }
-                    <div className="col-md-2 team-grid">
+                    <div className="col-weds-2 team-grid">
                         <div className="info">
                             <h3>Smith</h3>
                             <div className="arrow-container animated fadeInDown">
