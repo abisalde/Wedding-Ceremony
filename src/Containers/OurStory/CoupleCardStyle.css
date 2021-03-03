@@ -1,0 +1,25 @@
+.inner_w3l_agile_grids_couple {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: 'Groom Weds Bride';
+}
+
+.col-weds-2.team-grid {
+	grid-area: Weds;
+	margin: 2em 0em;
+}
+
+
+@media screen and (max-width: 480px) {
+	.inner_w3l_agile_grids_couple {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.col-weds-1.team-grid:nth-of-type(2n) {
+		order: 1;
+	}
+}
