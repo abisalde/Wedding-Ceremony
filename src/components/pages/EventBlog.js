@@ -28,7 +28,7 @@ class EventBlog extends Component {
                                 return (
                                 <SingleEventBlog
                                     {...events}
-                                    keys ={i}
+                                    key={i}
                                 />
                                 );
                             })   
@@ -40,7 +40,7 @@ class EventBlog extends Component {
 
 
                 
-                <div className="modal fade" id="myModal1" tabindex="-1" role="dialog">
+                <div className="modal fade" id="myModal1" tabIndex="-1" role="dialog">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -52,7 +52,7 @@ class EventBlog extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                <div className="modal fade" id="myModal2" tabIndex="-1" role="dialog">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -64,7 +64,7 @@ class EventBlog extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="modal fade" id="myModal3" tabindex="-1" role="dialog">
+                <div className="modal fade" id="myModal3" tabIndex="-1" role="dialog">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">

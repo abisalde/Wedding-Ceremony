@@ -18,7 +18,7 @@ class LocationCard extends Component {
                             <li><a href="#"><i className="fa fa-vk"></i></a></li>
                         </ul>
                     </div>
-                    <iframe src={this.props.mapinfo} allowfullscreen></iframe>
+                    <iframe src={this.props.mapinfo} allowFullScreen></iframe>
                 </div>
         );
     }

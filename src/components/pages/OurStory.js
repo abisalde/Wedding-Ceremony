@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from '../../Containers/OurStory/Gallery';
 import CoupleCard from '../../Containers/OurStory/CoupleCard';
-import CoupleCardStyle from '../../Containers/OurStory/CoupleCardStyle.css';
+import '../../Containers/OurStory/CoupleCardStyle.css';
 
 // Images Declarations
 import img1 from '../assets/images/a1.png';
@@ -74,7 +74,7 @@ class OurStory extends Component {
                                 return (
                                         <Gallery
                                             {...pics}
-                                            keys={i}
+                                            key={i}
                                         />
                                     )
                                 })
