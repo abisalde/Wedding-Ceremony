@@ -14,12 +14,12 @@ class Hero extends Component {
     state = {  }
     render() { 
         return ( 
-            <div class="banner">
+            <div className="banner">
             <div data-vide-bg="video/marriage">
-                <div class="center-container">
-                    <div class="banner-text">
-                        <div id="top" class="callbacks_container">
-                            <ul class="rslides" id="slider3">
+                <div className="center-container">
+                    <div className="banner-text">
+                        <div id="top" className="callbacks_container">
+                            <ul className="rslides" id="slider3">
                                     {BannerSliderText.map((text, i) => {
                                         return (
                                             <BannerTextSlider
@@ -33,7 +33,7 @@ class Hero extends Component {
                     </div>
                 </div>
             </div>
-            <div class="we-po-head">
+            <div className="we-po-head">
                 <img src="images/m1.png" alt=" " />
             </div>
         </div>

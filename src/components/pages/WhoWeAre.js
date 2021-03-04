@@ -70,7 +70,7 @@ class WhoWeAre extends Component {
                 </div>
                 <div className="clearfix"> </div>
                 {/*<!-- Modal5 -- */}
-                <div className="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div className="modal fade" id="myModal" tabIndex="-1" role="dialog">
                     <div className="modal-dialog">
                         {/*<!-- Modal content-->*/}
                         <div className="modal-content">

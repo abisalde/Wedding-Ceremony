@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 
 class Header extends Component {
     state = {  }
     render() { 
         return ( 
-        <div class="w3l-main" id="home">
+        <div className="w3l-main" id="home">
                 <div className="header-w3">
                 <div className="header-top-agile">
                     <div className="social-icons-agileits">
@@ -34,17 +34,17 @@ class Header extends Component {
                         <span className="icon-bar"></span>
 				    </button>
                         <div className="logo-agileinfo">
-                            <h1><Link to="/">wc</Link></h1>
+                            <h1><Link to="home">wc</Link></h1>
                         </div>
 
                         <div id="navbar" className="navbar-collapse navbar-right collapse hover-effect">
                             <ul className="nav navbar-nav">
-                                <li className="active"><Link to="/" data-hover="Home">Home</Link></li>
-                                <li><Link to="/OurStory" data-hover="About Us" className="scroll">About Us</Link></li>
-                                <li><a href="#events" data-hover="Events" className="scroll">Events</a></li>
-                                <li><a href="#gallery" data-hover="Gallery" className="scroll">Gallery</a></li>
-                                <li><a href="#team" data-hover="Planners" className="scroll">Planners</a></li>
-                                <li><a href="#contact" data-hover="Contact Us" className="scroll">Contact Us</a></li>
+                                <li className="active"><Link to="home" data-hover="Home">Home</Link></li>
+                                <li><Link activeClass="active" spy={true} smooth={true} duration={700} offset={-100} to="about" data-hover="About Us" className="scroll">About Us</Link></li>
+                                <li><Link activeClass="active" spy={true} smooth={true} duration={1600} to="events" data-hover="Events" className="scroll">Events</Link></li>
+                                <li><Link activeClass="active" spy={true} smooth={true} duration={1700} to="gallery" data-hover="Gallery" className="scroll">Gallery</Link></li>
+                                <li><Link activeClass="active" spy={true} smooth={true} duration={1800} to="team" data-hover="Planners" className="scroll">Planners</Link></li>
+                                <li><Link activeClass="active" spy={true} smooth={true} duration={2500} to="contact" data-hover="Contact Us" className="scroll">Contact Us</Link></li>
                             </ul>
                         </div>
                     </nav>

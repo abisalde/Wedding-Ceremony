@@ -6,8 +6,8 @@ class BannerTextSlider extends Component {
     render() { 
         return ( 
             <li>
-                <div class="banner-text-info">
-                    <h3 class="bnr-title">{this.props.title}</h3>
+                <div className="banner-text-info">
+                    <h3 className="bnr-title">{this.props.title}</h3>
                     <p>{this.props.subtitle}</p>
                 </div>
             </li>

@@ -46,7 +46,7 @@ class Contact extends Component {
                                 return (
                                     <LocationCard
                                         {...details}
-                                        keys={i}
+                                        key={i}
                                     />
                                 )
                             })}

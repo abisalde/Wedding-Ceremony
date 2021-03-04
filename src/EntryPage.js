@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Element } from 'react-scroll';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -16,27 +16,28 @@ class EntryPage extends Component {
     render() { 
         return (
             <div className="w3l-main">
-                <Router>
-                    <Header>
-                        <Route 
-                            path="/"
-                        />
-                    </Header>    
-                        <Hero />
-                    
-                    <OurStory>
-                        <Route
-                            path="/OurStory"
-                        />
-                    </OurStory>
-                        <WhoWeAre />
-                        <EventBlog />
-                        <OurGallery />
-                        <OurTeam />
-                        <Counter />
-                        <Contact />
-                        <Footer />
-                </Router>
+                <Element  id="home" name="home" >
+                    <Header />
+                    <Hero />
+                </Element>
+                <Element id="#about" name="about">
+                    <OurStory />
+                    <WhoWeAre />
+                </Element>
+                <Element id="#events" name="events">
+                    <EventBlog />
+                </Element>
+                <Element id="#gallery" name="gallery">
+                    <OurGallery />
+                </Element>
+                <Element id="#team" name="team">
+                    <OurTeam />
+                    <Counter />
+                </Element>
+                <Element id="#contact" name="contact">
+                    <Contact />
+                </Element>
+                <Footer />
             </div>  
         );
     }
